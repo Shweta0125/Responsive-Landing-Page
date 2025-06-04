@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Arohi Flower Decorators</title>
+  <style>
+    /* Reset & Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+      background-color: #fff;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #d63384;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #d63384;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 70vh;
+      background: url('images/5 img.jpg') center/cover no-repeat;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      margin-top: 70px;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.5);
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: 0;
+    }
+
+    .hero h1,
+    .hero p {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    /* About Content */
+    .about-content {
+      padding: 4rem 2rem;
+      background-color: #fff8f4;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .about-content h2,
+    .about-content h3 {
+      color: #d63384;
+      margin-bottom: 1rem;
+    }
+
+    .about-content p {
+      margin-bottom: 1rem;
+      font-size: 1.05rem;
+    }
+
+    .about-content ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 1rem 0;
+    }
+
+    .about-content li {
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="logo">Arohi Flower Decorators</div>
+    <nav>
+      <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero">
+    <h1>About Arohi Flower Decorators</h1>
+    <p>Crafting Memories Through Flowers</p>
+  </section>
+
+  <!-- About Content -->
+  <section class="about-content">
+    <h2>Our Story</h2>
+    <p>
+      At <strong>Floral Decor</strong>, we believe that every event deserves the beauty and elegance of fresh flowers. Founded in 2015, our mission has been to create unforgettable floral experiences for weddings, corporate events, parties, and special occasions.
+    </p>
+    <p>
+      What started as a small family-run studio has grown into a full-service floral design company known for creativity, precision, and passion. We take pride in using seasonal and locally-sourced flowers to create designs that reflect your style and story.
+    </p>
+
+    <h3>Why Choose Us?</h3>
+    <ul>
+      <li>🌸 Custom Floral Installations</li>
+      <li>🌿 Eco-Friendly, Local Blooms</li>
+      <li>💐 Personalized Themes and Styling</li>
+      <li>🎨 Creative Workshops and Flower Bars</li>
+      <li>❤ A Team That Cares About Your Vision</li>
+    </ul>
+
+    <p>
+      Join us in celebrating the power of petals. Let’s bring your vision to life—beautifully.
+    </p>
+  </section>
+
+  <script src="script.js"></script>
+  <p style="font-weight: bold;
+  background-color: pink;
+  color: #2c3e50;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;">
+  © 2025 by Shweta Raskar. All rights reserved.
+  </p>
+
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Services | Arohi Flower Decorators</title>
+  <style>
+    /* Reset & Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #d63384;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #d63384;
+    }
+
+    /* Hero Section */
+    .hero {
+      margin-top: 70px;
+      height: 40vh;
+      background: url('images/3 img.avif') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.5);
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: 0;
+    }
+
+    .hero h1,
+    .hero p {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+
+    /* Services Section */
+    .services {
+      max-width: 1100px;
+      margin: 4rem auto;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-card {
+      background-color: #fff8f4;
+      border: 1px solid #f0d3d9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card h3 {
+      color: #d63384;
+      margin-bottom: 0.5rem;
+    }
+
+    .service-card p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .service-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #d63384;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Arohi Flower Decorators</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="services.html"  class="active">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Our Services</h1>
+    <p>Bringing Beauty to Every Occasion</p>
+  </section>
+
+  <!-- Services List -->
+  <section class="services">
+    <div class="service-card">
+      <div class="service-icon">💐</div>
+      <h3>Wedding Decor</h3>
+      <p>Stunning floral arrangements for mandaps, aisles, entrances, and receptions.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🎉</div>
+      <h3>Event Styling</h3>
+      <p>Custom floral themes and stage decorations for parties and ceremonies.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🏢</div>
+      <h3>Corporate Events</h3>
+      <p>Professional floral styling for launches, conferences, and exhibitions.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🌸</div>
+      <h3>Flower Backdrops</h3>
+      <p>Instagram-worthy photo booths and flower walls for all events.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🛍</div>
+      <h3>Flower Gifting</h3>
+      <p>Personalized bouquets, hampers, and table arrangements delivered to your door.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🎨</div>
+      <h3>Workshops</h3>
+      <p>Floral design and DIY arrangement sessions for groups and individuals.</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  <p style="font-weight: bold;
+  background-color: pink;
+  color: #2c3e50;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;">
+  © 2025 by Shweta Raskar. All rights reserved.
+  </p>
+
+</body>
+</html>
